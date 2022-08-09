@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <script>
+        function alterar(){
+            let texto = "Eloisa";
+            document.getElementById("name").value = texto;
+        }
+        
+    </script>
+    <script>
+        function alerta(){
+        alert('document.getElementById("name").value');
+        }
+    </script>
+    
 </head>
 <body>
     <div class="card">
@@ -15,7 +29,8 @@
             <div class="name-div">
                 <label for="name" class="label">Nome completo</label>
                 <input type="text" placeholder="Name" id="name" name="name">
-                <button id="alterar">Alterar</button>
+                <button onclick="alterar()" id="alterar">Alterar</button>
+                <button onclick="alerta()" id="mensagem">Alert</button>
             </div>
         </div>
         <div class="bio">
