@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./aula01.css"/>
     <title>Document</title>
-
-    <script>
-        function alterar(){
-            let texto = "Eloisa";
-            document.getElementById("name").value = texto;
-        }
-        
-    </script>
-    <script>
-        function alerta(){
-            var id = document.getElementById("name").value;
-            alert(id);
-        }
-    </script>
-    
 </head>
 <body>
-    <div class="card">
-        <div class="strip"></div>
-        <div class="profile-row">
-            <div class="avatar"><img src="avatar.jpg" alt="avatar" width="150" height="150" class="avatar"></div>
-            <div class="name-div">
-                <label for="name" class="label">Nome completo</label>
-                <input type="text" placeholder="Name" id="name" name="name">
-                <button onclick="alterar()" id="alterar">Alterar</button>
-                <button onclick="alerta()" id="mensagem">Alert</button>
+    
+    <div class="container">
+
+        <div class="box1">
+
+            <div class="perfil">
+
             </div>
+            <div class="dados">
+                <label for="fname">Nome:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <div class="botao">
+                    <button type="button">Alterar</button>
+                </div>
+            </div>
+
         </div>
-        <div class="bio">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cupiditate libero. Voluptate obcaecati libero sequi aspernatur? Velit, at, blanditiis saepe laborum enim ex eligendi porro soluta, assumenda dolorem ipsum dolore!
+        <div class="box2">
+            <h5>
+                Enquanto uma manifestação linguística, o texto é produzido em um dado espaço e momento. Cenário e tempo compõem o que se chama de contexto. Além disso, são considerados informações contextuais: quem fala o texto; quem o escuta; quais são as ideologias, ética e moral do instante da produção e execução textuais, entre outros elementos. Para interpretar um texto, é fundamental levar em consideração tais informações vinculadas ao contexto.
+            </h5>
+
+            {% for nome in lista %}
+                <li> {{nome}} </li>
+            {% endfor %}
+
         </div>
+        <div> 
+            <form action='salvar' methods="POST">
+        </div>
+
     </div>
+
 </body>
 </html>
