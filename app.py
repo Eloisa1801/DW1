@@ -5,6 +5,7 @@ meu_app = Flask(__name__)
 @meu_app.route('/') #definindo rota
 @meu_app.route('/salvar', methods=['POST'])
 def to_index(): #funcao python
+    nome=request.form.get["nome"]
     lista=['Eloisa', 'Leticia', 'Paulo']
     return render_template('index.html', lista=lista)
 #FLASK_APP=app.py
