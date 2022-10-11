@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --corPreta: black;
+    --corCinza: #e6e7e8;
+    --corCinzaEscuro:#58595B;
+    --corAzul: #3777EE;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+header .topo1{
+    width: 95rem;
+    height: 45px;
+    background: var(--corPreta);
+
+}
+.gif1, .gif2{
+    width: 95rem;
+    height: 20rem;
+    background: var(--corCinza);
+    
+}
+header .topo2{
+    width: 95rem;
+    height: 45px;
+    background: var(--corCinza);
+    display: flex;
+    color: var(--corCinzaEscuro);
+    align-items: center;
+    justify-content: center;
+}
+header .topo3{
+    width: 95rem;
+    height: 8rem;
+    background: var(--corAzul);
+}
+header .topo4{
+    width: 95rem;
+    height: 45px;
+    background: var(--corCinzaEscuro);
+}
+header .topo5 img{
+    width: 95rem;
+    height: 45px;
+}
+.topo1 img, .gif1 img, .gif2 img{
+    display: block;
+    margin: 0px auto;
+    
+    /* object-fit: contain; */
+}
+.imagens img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    /* display: block; */
+    /* margin: 0px auto; */
+}
+.topo3 img, .topo4 img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.logo img{
+    width: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0px auto;
+}
+
+.topo2 div{
+    width: 10rem;
+}
+
+.topo3{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.topo3 div{
+    width: 15rem;
+    
+}
+.box2 .materia1{
+    width: 50rem;
+    height: 30rem;
+}
+.box2 .materia2{
+    width: 34rem;
+    height: 30rem;
+}
+.box2 .materia3{
+    width: 67rem;
+    height: 20rem;
+}
+.box2 .materia4{
+    width: 17rem;
+    height: 20rem;
+}
+.box2 .materia2, .box2 .materia1, .box3 .materia3, .box3 .materia4{
+    background: white;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.box2{
+    height: 35rem;
+}
+.box3{
+    height: 25rem;
+}
+.box2, .box3{
+    width: 95rem;
+    /* height: 35rem; */
+    background: var(--corCinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+.logos ul{
+    display: flex;
+    width: 95rem;
+    height: 5rem;
+    /* margin-right: 3rem; */
+}
+footer .rodape{
+    width: 95rem;
+    height: 12rem;
+    background: var(--corCinzaEscuro);
+}
