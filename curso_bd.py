@@ -1,3 +1,11 @@
+from crypt import methods
+from flask import Flask, render_template #importando flask
+from flask import request
+meu_app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://usuario:senha/IP/nome_bd" #prog. de bd utilizado, usuario, senha, @, e nome do bd
+db=SQLALCHEMY(app)
+@meu_app.route('/') #definindo rota
+
 class curso(db.model):
     
     curso_id = db.column(db.Integer, primary_key=true)
